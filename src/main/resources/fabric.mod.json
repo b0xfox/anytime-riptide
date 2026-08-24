@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "anytime-riptide",
+	"version": "${version}",
+	"name": "Anytime Riptide",
+	"description": "Adds a data component to allow Tridents to be used without water/rain",
+	"authors": [
+		"b0xfox"
+	],
+	"license": "MIT",
+	"icon": "assets/anytime-riptide/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.b0xfox.anytime_trident.AnytimeRiptide"
+		]
+	},
+	"mixins": [
+		"anytime-riptide.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

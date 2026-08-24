@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "io.github.b0xfox.anytime_trident.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"AnytimeRiptideMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
