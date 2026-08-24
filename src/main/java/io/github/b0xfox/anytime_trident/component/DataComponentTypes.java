@@ -15,7 +15,7 @@ public class DataComponentTypes {
     public static final ComponentType<Unit> ANYTIME_RIPTIDE = register("anytime_riptide", builder -> builder.codec(Unit.CODEC).packetCodec(PacketCodec.unit(Unit.INSTANCE)));
 
     private static <T> ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
-        return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of(AnytimeRiptide.MOD_ID, name),
+        return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of("minecraft", name),
                 builderOperator.apply(ComponentType.builder()).build());
     }
 
